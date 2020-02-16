@@ -5,8 +5,7 @@ import os
 import random
 
 client = discord.Client()
-ACCESS_TOKEN ="Njc4NjQyNDEyNDYwOTY1ODk4.Xkl42Q.VtQKXfjj1FpHGiNEJduysUENdzU"
-    # os.environ["ACCESS_TOKEN"]
+ACCESS_TOKEN =os.environ["ACCESS_TOKEN"]
 
 
 class Foods(commands.Cog, name='食べ物'):
