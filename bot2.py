@@ -17,7 +17,7 @@ class Foods(commands.Cog, name='食べ物'):
     async def on_message(self, message):
         """なにか画像があれば出すよ"""
         if message.content == "らーめん":
-            rnd = random.randint(1, 8)
+            rnd = random.randint(1, 12)
             await message.channel.send(file=discord.File(f"./ramen/r{rnd}.jpg"))
         else:
             return
